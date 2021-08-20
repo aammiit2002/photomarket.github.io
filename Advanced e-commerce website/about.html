@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Market | About Us</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <nav class="nav nav_top">
+            <div class="logo">
+              <a href="index.html"><img src="photo2.jpg" width="150px"></a>   <!--# will keeep the logo in the current page-->
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About Us</a>
+                <a href="store.html">Store</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Login/Register</a>
+            </div>
+        </nav>
+        <div class="about_us">
+            <h2>About Photo Market</h2>
+            <div class="about_content"></div>
+             <p>Photo Market is conceptualised and developed  for the convenience of all the camera users. Photo Market has  hands-on experience in dealing with used cameras and lenses since last 15 years. A journey which begun in Mumbai while dealing for our first
+                 camera, served more than 5000 satisfied costumers over the last 15 years. As our passion and knowledge grew for the cameras and lenses, we  decided to take it beyond our shop and make it online.
+                 Photo Market is only platform in India which deals completely in used cameras. You can be assured that you will get the best rates in the market for your beloved device and also it is in perfect hands. With a vision of easy and convenient selling 
+                of your device  in less than a minute is now possible only through Photo Market.com
+                So, find the right home for your used camera here, sell now at Photo Market.com.</p>
+                <p>Photo Market is conceptualised and developed  for the convenience of all the camera users. Photo Market has  hands-on experience in dealing with used cameras and lenses since last 15 years. A journey which begun in Mumbai while dealing for our first
+                    camera, served more than 5000 satisfied costumers over the last 15 years. As our passion and knowledge grew for the cameras and lenses, we  decided to take it beyond our shop and make it online.
+                    Photo Market is only platform in India which deals completely in used cameras. You can be assured that you will get the best rates in the market for your beloved device and also it is in perfect hands. With a vision of easy and convenient selling 
+                   of your device  in less than a minute is now possible only through Photo Market.com
+                   So, find the right home for your used camera here, sell now at Photo Market.com</p>
+                <hr>
+            <h2>Our Mission</h2>
+            <p>At Sell Your Gadget we aim to buy your used gadgets from any common place , your home/office or you can visit our office. We always try to offer the highest 
+                price for your DSLR Camera /Laptop/Smartphone if you wish to sell them to us. Dealing with Sell Your Gadget will give you hassle free 
+                experience to sell your device. We offer Cash & Account Transfer at Pick up Point and buy your gadget immediatly. Best Price Guarantee</p>
+            </div>
+            </div>
+                <!--Feedback form-->
+        <div class="feed">
+            <h2>Write a review</h2>
+            <div class="feed_form" method="post">
+                <form name="submit-googlesheet">
+                    <input type="text" name="Name" placeholder="Name"><br>
+                    <input type="email" name="Email" placeholder="Email ID"><br>
+                    <input type="number" name="Number" placeholder="Contact number"><br>
+                    <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_logo">
+                <a href="index.html"><img src="photo2.jpg" width="150px"></a>   <!--# will keeep the logo in the current page-->
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+             <a href="about.html">About Us</a>
+             <a href="store.html">Store</a>|
+             <a href="blog.html">Blogs</a>|
+             <a href="login.html">Login</a>|
+             <a href="login.html">Register</a>
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms of Use</a>|
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>|
+                <a href="https://www.facebook.com/shapeai-113123647040051/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>|
+                <!--WE give target="blank" to let the social media handle on a different tab of browser-->
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>|
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>|
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.WhatsApp.com/send?phone=+919348530243" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>|<!--API INTEGRATION OF WHATSAPP-->
+                <a href="tel: +919348884639"><i class="fa fa-phone" aria-hidden="true"></i></a>|
+                <a href="mailto:amitkota4961@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <hr>
+                <p>Copyright &copy; 2021 PHOTO MARKET. All rights reserved </p>
+            </div>
+        </footer>
+<script type="text/javascript">
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwE9sita6npl6MmpVmT_iF-mGGlh2l9JCc05bl56ALrfWJw0y90btilp-UHhdrkh3Vg1A/exec'
+const form = document.forms['submit-googlesheet']
+
+form.addEventListener('submit', e => {
+e.preventDefault()
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+.then(response => alert("Thank you for your valuable feedback..!"))
+.catch(error => console.error('Error!', error.message))
+})</script>
+</body>
+</html>

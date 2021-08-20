@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Market | Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <nav class="nav nav_top">
+            <div class="logo">
+              <a href="index.html"><img src="photo2.jpg" width="150px"></a>   <!--# will keeep the logo in the current page-->
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About Us</a>
+                <a href="store.html">Store</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Login/Register</a>
+            </div>
+        </nav>
+        <div class="blank"></div>
+            <!--login page-->
+            <div class="html_form">
+                <form onsubmit="return validation()" name="Submit-googlesheet" method="POST">
+                    <h1>Sign Up</h1><br>
+                    <p>with Photo Market for free </p>
+                    <br>
+                    <!--<label>Full Name  :</label>-->
+                    <input type="text" id="username" name="Name" placeholder="Full Name"><br> <!--WHATEVER WE WRITE IN THE 'name' THAT WE ALSO HAVE TO USE IN GOOGLE SHEETS-->
+                    <span id="errorname" style="color: red;"></span><br>
+                    <!--<label>Email Id   :</label>-->
+                    <input type="email" id="email" name="Email ID" placeholder="Enter your email"><br>
+                    <span id="erroremail" style="color: red;"></span><br>
+                    <!--<label>Contact No.  :</label>-->
+                    <input type="number" id="number" name="Phone No." placeholder="Enter you number"><br>
+                    <span id="errornumber" style="color: red;"></span><br>
+                   <!-- <label>College Name :</label>-->
+                   <!--<input type="text" id="collegename" name="Institution Name" placeholder="Enter your college name"><br>
+                    <span id="errorcollegename" style="color: red;"></span><br>-->
+                   
+                    <!--<label>College branch</label>-->
+                    <!--<select name="Branch" required>
+                        <option>--Select Branch--</option>
+                        <option>CSE</option>
+                        <option>EEE</option>
+                        <option>CSIT</option>
+                        <option>ME</option>
+                        <option>CE</option>
+                    </select><br>
+                    <br>
+                    <label>College year</label>
+                    <select name="Year" required>
+                        <option>--Select Year--</option>
+                        <option>1st</option>
+                        <option>2nd</option>
+                        <option>3rd</option>
+                        <option>4th</option>
+                        <option>Graduate</option>
+                    </select><br>-->
+                    <br>
+                    <button type="Submit">Register</button>
+                    <button type="reset">Login</button>
+                </form>
+                         <a href="mailto:amitkota4961@gmail.com"><p>Forgot password?</p></a>
+                        </div>
+                        <script type="text/javascript">
+                        function validation() {
+                            var username=document.getElementById('username').value;
+                            var email=document.getElementById('email').value;
+                            var number=document.getElementById('number').value;
+                           // var collegename=document.getElementById('collegename').value;
+                
+                            var usercheck=/^[A-Za-z]{3,30}$/; //defining the characters a person can use and {3,30}- indicates the min and max character can be used (/^[]{}$/)-notation
+                            var emailcheck=/^[A-Za-z_0-9.]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;//validation for every component of the email address is given eg.-(xyz4961)(@)(gmail)(.)(com)
+                            var numbercheck=/^[6789]{1}[0-9]{9}$/;
+                           // var collegecheck=/^[A-Za-z.,]{3,}$/;
+                
+                            if (usercheck.test(username)) {
+                                document.getElementById('errorname').innerHTML=" ";
+                            }
+                            else{
+                                document.getElementById('errorname').innerHTML="*Invalid Name*";
+                                return false;
+                            }
+                            if (emailcheck.test(email)) {
+                                document.getElementById('erroremail').innerHTML=" ";
+                            }
+                            else{
+                                document.getElementById('erroremail').innerHTML="*Invalid Email*";
+                                return false;
+                
+                            }
+                            if (numbercheck.test(number)) {
+                                document.getElementById('errornumber').innerHTML=" ";
+                            }
+                            else{
+                                document.getElementById('errornumber').innerHTML="*Invalid Contact No.*";
+                                return false;
+                
+                            }
+                            /*if (collegecheck.test(collegename)) {
+                                document.getElementById('errorcollegename').innerHTML=" ";
+                            }
+                            else{
+                                document.getElementById('errorcollegename').innerHTML="*Invalid college name*";
+                                return false;
+                
+                            }*/
+                        }
+                      </script>
+                      <div class="blank1">
+
+                      </div>
+        <footer>
+            <div class="footer_logo">
+                <a href="index.html"><img src="photo2.jpg" width="150px"></a>   <!--# will keeep the logo in the current page-->
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+             <a href="about.html">About Us</a>|
+             <a href="store.html">Store</a>|
+             <a href="blog.html">Blogs</a>|
+             <a href="login.html">Login</a>|
+             <a href="login.html">Register</a>
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms of Use</a>|
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>|
+                <a href="https://www.facebook.com/shapeai-113123647040051/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>|
+                <!--WE give target="blank" to let the social media handle on a different tab of browser-->
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>|
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>|
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.WhatsApp.com/send?phone=+919348530483" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>|<!--API INTEGRATION OF WHATSAPP-->
+                <a href="tel: +919348884648"><i class="fa fa-phone" aria-hidden="true"></i></a>|
+                <a href="mailto:amitkota4961@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <hr>
+                <p>Copyright &copy; 2021 PHOTO MARKET. All rights reserved </p>
+            </div>
+        </footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+</script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" 
+integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwE9sita6npl6MmpVmT_iF-mGGlh2l9JCc05bl56ALrfWJw0y90btilp-UHhdrkh3Vg1A/exec'
+const form = document.forms['submit-googlesheet']
+
+form.addEventListener('submit', e => {
+e.preventDefault()
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+.then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+.catch(error => console.error('Error!', error.message))
+})</script>
+</body>
+</html>

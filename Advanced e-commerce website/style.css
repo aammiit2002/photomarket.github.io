@@ -1,0 +1,716 @@
+.nav{
+    background-color: white;
+    z-index: 9;
+    padding: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex; /*same line in horizontal way*/
+    box-shadow: 0px 3px 65px 0px rgb(29, 29, 28);
+}
+.nav_top{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+}
+.logo{
+    width: 60%;
+    float: left;
+}
+.logo img{
+    padding: 10px;
+}
+.nav_side{
+    float: right;
+    width: 40%;
+    margin-top: 40px;
+}
+.main{
+    background-image: url(blackscene1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+    opacity: 0.9;
+    
+}
+.main .main_content{
+    padding-top: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.main .main_content h2{
+    color:gold;
+    font-size: 50px;
+    font-family: cosmic, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    opacity: 1;
+   
+}
+.main .main_content p{
+    font-size: 25px;
+    font-family: sans-serif;
+    color:azure;
+    opacity: 10;
+    text-align: center;
+    line-height: 40px;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+.main .main_content .button{
+    text-align: center;
+    margin-top: 100px;
+
+}
+.main .main_content .button a{
+    margin: 50;
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+    padding: 10px 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.main .main_content .button a:hover{
+    background-color:midnightblue;
+    color: white;
+    font-weight: bolder;
+    transition: 0.5s;
+    box-shadow: 2px 1px 8px blue;
+}
+.nav_side a{
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 0px;
+    color: black;
+    font-weight: bolder;
+    font-family: cosmic, sans-serif;
+    padding: 5px;
+    
+}
+.nav_side a:hover{
+    color:gold;
+    text-decoration: none;
+    transition: all 1s ease;
+    box-shadow: 2px 2px 12px 0px gray;
+    background-color: black;
+    border-radius: 8px;
+}
+.product h2{
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    color: midnightblue;
+    font-weight: bolder;
+}
+.product .product_container{
+    display: flex;
+    
+}
+.product .product_container .item{
+    width: 16.66%;
+    margin: 10px;
+    height: auto;
+}
+.product .product_container .item:hover{
+    box-shadow: 0px 3px 65px 0px gray;
+    }
+.product .product_container .item .item_image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.product .product_container .item .item_image img{
+    width: 95%;
+    height: 200px;
+    
+}
+.product .product_container .item .image_content{
+    text-align: center;
+    padding: 5px;
+}
+.product .product_container .item a{
+    text-align: center;
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+    padding: 8px 8px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.5s;
+    
+}
+.product .product_container .item a:hover{
+    background-color:midnightblue;
+    color: white;
+    font-weight: bolder;
+    transition: 0.5s;
+    box-shadow: 2px 1px 8px blue;
+}
+.product .product_container .item p{
+    text-decoration: none;
+    text-align: center;
+    line-height: 12px;
+    margin-top: 2px;
+    font-weight:bolder;
+    line-height: 40px;
+    color:#6E2C00;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.product .product_container .item h3{
+    text-align: center;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+.product .product_container .item .item_content{
+    text-align: center;
+    line-height: 3px;
+}
+.product .more{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.product .more a{
+    text-align: center;
+    text-decoration: none;
+    background-color: midnightblue;
+    color: white;
+    padding: 8px 8px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.product .more a:hover{
+    background-color:black;
+    color:orange;
+    font-weight: bolder;
+    transition: 0.5s;
+    box-shadow: 2px 1px 10px orange;
+}
+.keypoint{
+    padding: 30px;
+
+}
+.keypoint h2{
+font-size: 40px;
+text-align: center;
+padding: 10px;
+margin-bottom: 45px;
+color: midnightblue;
+font-weight: bolder;
+}
+.keypoint .key_container{
+    display: flex;
+    text-align: center;
+}
+.keypoint .key_container .key_content{
+    width: 40%;
+    padding: 20px;
+    float: left;
+}
+.keypoint .key_container .key_contents li{
+    margin: 10px;
+    padding: 10px;
+  /*  border-left: 3px solid blue;
+    border-right: 3px solid blue;*/
+    border:2px solid silver;
+    border-radius: 10px;
+    list-style: none;
+    color: black;
+    text-align: left;
+    font-family: cosmic, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.20);
+    color: black;
+    background-color: #F1C40F;
+}
+.keypoint .key_container .key_image{
+    width: 40%;
+    float: right;
+    margin-left: 100px; 
+}
+.keypoint .key_container .key_image img{
+    width: 65%;
+    float: right;
+    margin-right: 80px;
+}
+.testi{
+    padding: 50px;
+}
+.testi h2{
+    font-size: 40px;
+text-align: center;
+padding: 10px;
+margin: 35px;
+text-transform: uppercase;
+color: midnightblue;
+font-weight: bolder;
+}
+.testi .testi_container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    
+    box-shadow: 2px 0px 12px 1px black;
+}
+.testi .testi_container .carousel-inner{
+    background-color: white;
+    box-shadow: none;
+
+}
+.testi .testi_container .item{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: none;
+}
+.testi .testi_container .item .item_image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.testi .testi_container .item .item_image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.team{
+    padding: 40px;
+}
+.team h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    margin: 35px;
+    text-transform: uppercase;
+    color: midnightblue;
+    font-weight: bolder; 
+}
+.team .team_container{
+    display: flex;
+    
+}
+.team .team_container .team_video{
+    width: 48%;
+    padding: 20px;
+    margin-bottom: -750px;
+}
+.team .team_container .team_video video{
+    width: 100%;
+    height: 30%;
+    border: 10px solid gainsboro;/*gainsboro alternative color name*/
+    border-radius: 8px;
+}
+.team .team_container .team_content{
+    width: 40%;
+    padding: 20px;
+    margin-left: 55px;
+}
+.team .team_container .team_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cosmic sans-serif;
+    line-height: 18px;
+    text-align: center;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.20);
+}
+.feed{
+    padding: 50px;
+    background-image: url('formbg3.jpg');
+    background-size: cover;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.feed h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    margin: 35px;
+    text-transform: uppercase; 
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+.feed .feed_form{
+    text-align: center;
+}
+.feed .feed_form form{
+    padding: 20px;
+}
+.feed .feed_form form input{
+    width: 40%;
+    margin: 8px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+.feed .feed_form form textarea{
+    width: 40%;
+    margin: 8px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+.feed .feed_form form button{
+    width: 40%;
+    margin: 5px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color: midnightblue;
+    border-radius: 8px;
+    font-weight: bolder;
+    color: white;
+    font-size: 18px;
+}
+.feed .feed_form form button:hover{
+    color:gold;
+    text-decoration: none;
+    transition: all 1s ease;
+    box-shadow: 2px 2px 12px 0px orange;
+    background-color: black;
+    border-radius: 8px;
+}
+.about_us{
+   padding-top: 150px;
+   padding-bottom: 50px;
+   padding: 100px;
+}
+.about_us h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    margin: 35px;
+    text-transform: uppercase;
+    color: midnightblue;
+    font-family: cosmic sans-serif;
+}
+.about_us p{
+    padding: 10px;
+    font-size: 20px;
+    font-family: cosmic sans-serif;
+    line-height: 28px;
+}
+.contact_container{
+    padding-top: 120px;
+    padding-bottom: 60px;
+    padding: 100px;
+}
+
+.contact_container h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    margin: 35px;
+    text-transform: uppercase; 
+    margin-bottom: 30px;
+    font-weight: bolder;
+    color: midnightblue;
+}
+.contact_container .g_map{
+    border: 10px solid black;
+}
+.contact_container .contact_content{
+    padding: 20px;
+}
+.contact_container .contact_content p{
+    padding: 10px;
+    font-size: 22px;
+    font-family: cosmic sans-serif;
+    text-align: center;
+    line-height: 15px;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: -40px;
+    color: blue;
+}
+.blog{
+    padding: 30px;
+    padding-top: 130px;
+}
+.blog h1{
+    color: midnightblue;
+    background-color: gold;
+    text-align: center;
+    font-size: 40px;
+   /* box-shadow: 0px 3px 65px 0px wheat;*/
+
+}
+.blog h2{
+    color: midnightblue;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.blog p{
+    font-family: sans-serif;
+}
+.blog span{
+    color: blue;
+    font-style: italic;
+}
+.blog .blog_container{
+    display: flex;
+}
+.blog .blog_container .blog_pic{
+    margin-left: 20px;
+}
+.blog .blog_container .blog_content p{
+    margin-left: 30px;
+    font-size: 17px;
+    margin-top: -8px;
+    font-family: sans-serif;
+}
+.terms{
+   padding: 25px;
+   margin-top: -20px;
+}
+.terms h2{
+    text-align: center;
+    color: midnightblue;
+    font-size: 25px;
+}
+.terms ul{
+    font-size: 17px;
+    font-family: sans-serif;
+}
+/*Login page*/
+.blank{
+    margin-bottom: 170px;
+}
+div form h1{
+    text-align: center;
+    font-size: 50px;
+    color: midnightblue;
+    margin-top: 50px;
+}
+div form p{
+    text-align: centre;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: blue;
+    margin-top: -20px;
+}
+.html_form form{
+    padding-right: px;
+    font-size: large;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.html_form{
+    padding: 50px;
+    width: 55.5%;
+    margin-left: 100px;
+}
+.html_form{
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 16px black;
+    border-radius: 50px;
+    margin-left: 300px;
+    background-color: #85C1E9 ;
+}
+.html_form form input:focus{
+    /*border: 2px solid yellow;*/
+    box-shadow: 1px 1px 12px black;
+}
+.html_form form input{
+    width: 38%;
+    /*border-radius: 5px;*/
+    border: none;
+    outline: none;
+   /* border-left: 3px solid orange;*/
+    border-bottom: 2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    margin: 10px;
+    padding: 10px;
+}
+.html_form form button{
+    padding: 10px;
+    background-color: midnightblue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 1px 1px 12px white;
+    border-radius: 5px;
+    margin: 10px;
+}
+.html_form form button:hover{
+    border:2px solid black;
+    background-color: black;
+    color: gold;
+}
+.html_form p{
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: -20px;
+}
+.blank1{
+    margin-top: 70px;
+}
+@media screen and (max-width:480px) {
+    .product .product_container{
+        display: grid;
+        margin-left: 0px;
+    }
+    .product .product_container .item{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .team .team_container{
+        display: grid; 
+        margin-left: 0px;
+         
+    }  
+    .team .team_container .team_video{
+        width: 100%;
+    }
+    .team .team_container .team_content{
+        margin-top: 350px;
+        width: 100%;
+        margin-left: -20px;
+    }
+}
+@media screen and (max-width:540px) {
+    .product .product_container{
+        display: grid;
+        margin-left: 0px;
+    }
+    .product .product_container .item{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:540px) {
+    .team .team_container{
+        display: grid; 
+        margin-left: 0px;
+         
+    }  
+    .team .team_container .team_video{
+        width: 100%;
+    }
+    .team .team_container .team_content{
+        margin-top: 350px;
+        width: 100%;
+        margin-left: -20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .feed{
+         
+        margin-left: 0px;
+        width: 190%;
+        margin-right: 0px;
+
+    }
+}
+@media screen and (max-width:540px) {
+    .feed{
+         
+        margin-left: 0px;
+        width: 190%;
+        margin-right: 0px;
+
+    }
+}
+@media screen and (max-width:360px) {
+    .feed{
+         
+        margin-left: 0px;
+        width: 190%;
+        margin-right: 0px;
+
+    }
+}
+/*login page ends*/
+footer{
+    background-color: #273746;
+    padding: 50px;
+}
+footer .pages{
+    text-align: center;
+}
+footer .pages h3{
+    color: gold;
+    font-size: 20px;
+    padding: 5px;
+}
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+    color: blue;
+}
+footer .pages a:hover{
+    color: white;
+}
+footer .doc{
+    text-align: center;
+}
+footer .doc h3{
+    color: gold;
+    font-size: 20px;
+    padding: 5px;
+}
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+    color: blue;
+}
+footer .doc a:hover{
+    color: white;
+}
+footer .social{
+    text-align: center;
+}
+footer .social h3{
+    color: gold;
+    font-size: 20px;
+    padding: 5px;
+}
+footer .contact{
+    text-align: center;
+}
+footer .contact h3{
+    color: gold;
+    font-size: 20px;
+    padding: 5px;
+}
+footer .social a{
+    text-decoration: none;
+    font-size: 30px;
+    color: blue;
+    margin: 10px;
+}
+footer .social a:hover{
+    color: white;
+}
+footer .contact a{
+    text-decoration: none;
+    font-size: 30px;
+    color: blue;
+    margin: 10px;
+}
+footer .contact a:hover{
+    color: white;
+}
+footer .contact p{
+    color: white;
+    font-weight: bold;
+}
